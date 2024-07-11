@@ -27,7 +27,6 @@ async function checkWeather(cityName) {
   try {
     const response = await fetch(`${apiUrl}${cityName}`);
 
-   
     let data = await response.json();
 
     if (!data.name) {
@@ -52,11 +51,9 @@ async function checkWeather(cityName) {
 
 
 
-
 searchBtn.addEventListener('click', () => {
   let city = searchInput.value;
   checkWeather(city);
   
-
   searchInput.value = '';
 })
