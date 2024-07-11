@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,18 +16,24 @@
 
 <body>
   <div class="wrapper">
+    <h1 class="visually-hidden">Weather forecast</h1>
     <section class="card">
+      <h2 class="visually-hidden">City search</h2>
       <div class="card__search">
         <input class="card__input" type="text" placeholder="Enter city name" spellcheck="false">
-        <button class="card__search-icon">
+        <button class="card__search-btn">
           <img class="card__search-image" src="images/search.png" alt="search icon" width="40" height="45">
         </button>
       </div>
+      <div class="card__error">
+        <p class="cerd__error-text">Invalid city name</p>
+      </div>
     </section>
     <section class="weather">
+      <h2 class="visually-hidden">Weather info</h2>
       <img class="weather__icon" src="images/clouds.png" width="224" height="224">
-      <p class="weather__temperature">22 °C</p>
-      <p class="weather__city-name">New York</p>
+      <p class="weather__temperature">20 °C</p>
+      <p class="weather__city-name">Moscow</p>
 
       <div class="weather__details">
         <div class="weather__col">
@@ -37,16 +44,16 @@
           </div>
         </div>
         <div class="weather__col">
-          <img src="images/wind.png" alt="wind icon" class="weather__img" width="79" height="78">
+          <img src="images/wind.png" alt="wind icon" class="weather__img weather__img--wind" width="79" height="78">
           <div>
-            <span class="weather__wind-percent">15 km/h </span>
+            <span class="weather__wind-speed">15 km/h </span>
             <p class="weather__wind">Wind speed</p>
           </div>
         </div>
       </div>
     </section>
   </div>
-
+  <script src="weather.js"></script>
 </body>
 
 </html>

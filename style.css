@@ -13,6 +13,19 @@ body {
   color: #fff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   max-width: 500px;
@@ -44,7 +57,7 @@ body {
   font-size: 18px;
 }
 
-.card__search-icon {
+.card__search-btn {
   border: none;
   background-color: #fff;
   border-radius: 50px;
@@ -70,7 +83,20 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  display: none;
+  /* transform: translateY(-150%);
+  animation: ani 1s forwards; */
 }
+
+/* @keyframes ani {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+} */
 
 .weather__city-name {
   margin-bottom: 50px;
@@ -103,6 +129,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.card__error {
+  display: none;
+  font-size: 22px;
+  color: red;
+  text-align: left;
 }
 
 @media(min-width: 768px) {
