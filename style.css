@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background: darkslategray;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  background: -webkit-linear-gradient(90deg, #95be9c, #c6ddbe);
+  background: linear-gradient(90deg, #95be9c, #c6ddbe);
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.card__search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card__input {
+  border: none;
+  background-color: #fff;
+  color: #555;
+  padding: 10px 25px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.card__search-icon {
+  border: none;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.card__search-image {
+  width: 16px;
+  height: auto;
+}
+
+
+.weather {
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.weather__city-name {
+  margin-bottom: 50px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.weather__temperature {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.weather__details {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+.weather__img {
+  width: 60px;
+  height: auto;
+
+}
+
+.weather__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media(min-width: 768px) {
+  .card__search {
+    flex-direction: row;
+  }
+
+  .weather__col {
+    flex-direction: row;
+  }
+}
