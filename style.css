@@ -10,7 +10,6 @@ body {
   background: darkslategray;
   font-style: normal;
   font-weight: 400;
-  color: #fff;
 }
 
 .visually-hidden {
@@ -34,7 +33,7 @@ body {
   background: -webkit-linear-gradient(90deg, #95be9c, #c6ddbe);
   background: linear-gradient(90deg, #95be9c, #c6ddbe);
   border-radius: 20px;
-  text-align: center;
+
 }
 
 

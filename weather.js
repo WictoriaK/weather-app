@@ -1,7 +1,8 @@
-const apiKey = '6fb45d4563da1dde899728b0a806dccd&units';
+const weatherApiKey = '6fb45d4563da1dde899728b0a806dccd';
 
 let measurmentUnits = 'metric';
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=${measurmentUnits}&appid=${apiKey}&q=`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=${measurmentUnits}&appid=${weatherApiKey}&q=`;
+
 
 const weatherBlock = document.querySelector('.weather');
 const city = document.querySelector('.weather__city-name');
@@ -45,7 +46,7 @@ async function checkWeather(cityName) {
     weatherBlock.style.display = 'flex';
     errorBlock.style.display = 'none';
   } catch (err) {
-    console.error('Произошла ошибка!', err)
+    console.error('Error!', err)
   }
 }
 
@@ -57,3 +58,6 @@ searchBtn.addEventListener('click', () => {
   
   searchInput.value = '';
 })
+
+
+
